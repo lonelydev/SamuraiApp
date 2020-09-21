@@ -22,3 +22,14 @@ Thanks to Julie Lerman's course, I now know of EF Core Powertools, which helps t
 entity model diagrams that display how the model looks like even before creating the database
 depicting the many-many and one-one relationships clearly. 
 
+## Migrations
+
+Create migrations using commands in nuget package manager console. 
+
+To create the migration to apply relationship changes:
+
+`add-migration newrelationships`
+
+This command compares the snapshot and the new members of the model to finally create the migration. 
+
+Once the file is create, you can run `update-database` which will then apply the migration. 
